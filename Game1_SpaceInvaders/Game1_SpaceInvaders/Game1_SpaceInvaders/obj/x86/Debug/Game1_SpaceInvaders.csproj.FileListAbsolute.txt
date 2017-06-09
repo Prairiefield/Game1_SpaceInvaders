@@ -1,0 +1,28 @@
+\\artemis\17jprairie\my documents\visual studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\blackMana.xnb
+\\artemis\17jprairie\my documents\visual studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Game1_SpaceInvaders.exe
+\\artemis\17jprairie\my documents\visual studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Game1_SpaceInvaders.pdb
+\\artemis\17jprairie\my documents\visual studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.csprojResolveAssemblyReference.cache
+\\artemis\17jprairie\my documents\visual studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\artemis\17jprairie\my documents\visual studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.exe
+\\artemis\17jprairie\my documents\visual studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.pdb
+\\artemis\17jprairie\my documents\Visual Studio 2010\Projects\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\BasicText.xnb
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\blackMana.xnb
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\BasicText.xnb
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Game1_SpaceInvaders.exe
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Game1_SpaceInvaders.pdb
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.csprojResolveAssemblyReference.cache
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.exe
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.pdb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\blackMana.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\BasicText.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Game1_SpaceInvaders.exe
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Game1_SpaceInvaders.pdb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.csprojResolveAssemblyReference.cache
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.exe
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Debug\Game1_SpaceInvaders.pdb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\blueMana.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\EndText.xnb
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\blueMana.xnb
+E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\EndText.xnb

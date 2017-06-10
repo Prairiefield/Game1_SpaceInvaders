@@ -36,7 +36,7 @@ namespace Game1_SpaceInvaders
 
         Levels level = new Levels();
 
-        bool showDebug;
+        bool showDebug = false;
 
         enum GameState
         {
@@ -78,11 +78,12 @@ namespace Game1_SpaceInvaders
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             alienTexture = Content.Load<Texture2D>("blackMana");
-
             blueColor = Content.Load<Texture2D>("blueMana");
 
+
             level.UpdateLevel(this);
-            //debug = currentAliens[0].alienRect.X;
+            for (int i = 0; i < currentAliens.Count(); i++)
+                currentAliens[i].LoadContent(Content);
         }
 
         protected override void UnloadContent()
@@ -119,6 +120,10 @@ namespace Game1_SpaceInvaders
                     if (!((currentAliens[i].alienRect.X + currentAliens[i].alienRect.Width <= bufferWidth) && (currentAliens[i].alienRect.X >= 0)))
                         for (int j = 0; j < currentAliens.Count(); j++)
                             currentAliens[j].HitSide();
+
+                //UPDATE ALIEN TEXTURES
+                for (int i = 0; i < currentAliens.Count(); i++)
+                    currentAliens[i].Update(gameTime);
                 #endregion
 
                 //FIRE PROJECTILE
@@ -207,9 +212,7 @@ namespace Game1_SpaceInvaders
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
             spriteBatch.Begin();
-
 
             //DRAW COMBAT
             #region

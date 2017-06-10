@@ -1,0 +1,10 @@
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\blackMana.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\blueMana.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\BasicText.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\EndText.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Game1_SpaceInvaders.exe
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Game1_SpaceInvaders.pdb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Build 0.02\Game1_SpaceInvaders.csprojResolveAssemblyReference.cache
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Build 0.02\Microsoft.Xna.Framework.RuntimeProfile.txt
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Build 0.02\Game1_SpaceInvaders.exe
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Build 0.02\Game1_SpaceInvaders.pdb

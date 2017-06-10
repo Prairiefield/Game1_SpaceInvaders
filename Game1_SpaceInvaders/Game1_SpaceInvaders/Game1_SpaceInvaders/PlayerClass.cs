@@ -26,9 +26,9 @@ namespace Game1_SpaceInvaders
         public void MoveX(int Direction)
         {
             if (Direction == 1)
-                playerRect.Location = new Point(playerRect.X + moveXSpeed, playerRect.Y);
+                playerRect.X += moveXSpeed;
             else if (Direction == -1)
-                playerRect.Location = new Point(playerRect.X - moveXSpeed, playerRect.Y);
+                playerRect.X += -moveXSpeed;
         }
 
         public int CenterX()

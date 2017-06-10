@@ -14,6 +14,7 @@ namespace Game1_SpaceInvaders
 {
     public class BasicAliens
     {
+        GeneralAnimation alienAnimation;
         public Rectangle alienRect;
         public Texture2D alienTexture;
         public float moveSpeed;
@@ -26,20 +27,26 @@ namespace Game1_SpaceInvaders
                 moveSpeed = 10;
                 alienTexture = mainGame.blueColor;
                 alienRect = new Rectangle(XPos, YPos, 20, 20);
+                alienAnimation = new GeneralAnimation(200, new Rectangle(0,0,1,1), new Rectangle(0,0,1,1));
             }
+        }
+
+        public void LoadContent(ContentManager Content)
+        {
+            alienAnimation.LoadContent(Content);
         }
 
         public void MoveX()
         {
             if (goingRight)
-                alienRect.Location = new Point((int)(alienRect.X + moveSpeed), alienRect.Y);
+                alienRect.X += (int)moveSpeed;
             else
-                alienRect.Location = new Point((int)(alienRect.X - moveSpeed), alienRect.Y);
+                alienRect.X += (int)-moveSpeed;
         }
 
         public void MoveY()
         {
-            alienRect.Location = new Point(alienRect.X, alienRect.Y + 5);
+            alienRect.Y += 5;
         }
 
         public void HitSide()
@@ -49,9 +56,14 @@ namespace Game1_SpaceInvaders
             this.MoveX();
         }
 
+        public void Update(GameTime gameTime)
+        {
+            alienAnimation.Update(gameTime);       
+        }
+
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(alienTexture, alienRect, Color.White);
+            spriteBatch.Draw(alienTexture, alienRect, alienAnimation.sourceRect,Color.White);
         }
     }
 }

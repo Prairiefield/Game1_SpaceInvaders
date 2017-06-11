@@ -19,23 +19,30 @@ namespace Game1_SpaceInvaders
         public Texture2D alienTexture;
         public float moveSpeed;
         public bool goingRight;
+        public int health;
 
+        //DIFFERENT TYPES OF ENEMIES
         public BasicAliens(int XPos, int YPos, int EnemyType, Game1 mainGame)
         {
+            //PEWPEWER
+            #region
             if (EnemyType == 0)
             {
-                moveSpeed = 10;
-                alienTexture = mainGame.blueColor;
+                moveSpeed = 3;
+                alienTexture = mainGame.alien1;
                 alienRect = new Rectangle(XPos, YPos, 20, 20);
-                alienAnimation = new GeneralAnimation(200, new Rectangle(0,0,1,1), new Rectangle(0,0,1,1));
+                alienAnimation = new GeneralAnimation(300, new Rectangle(0,0,128,64), new Rectangle(0,0,64,64));
+                health = 1;
             }
+            #endregion
         }
 
-        public void LoadContent(ContentManager Content)
+        public void LoadContent()
         {
-            alienAnimation.LoadContent(Content);
+            alienAnimation.LoadContent();
         }
 
+        //ALIEN MOVEMENT ON X AXIS
         public void MoveX()
         {
             if (goingRight)
@@ -44,11 +51,13 @@ namespace Game1_SpaceInvaders
                 alienRect.X += (int)-moveSpeed;
         }
 
+        //ALIEN MOVEMENT ON Y AXIS
         public void MoveY()
         {
-            alienRect.Y += 5;
+            alienRect.Y += 8;
         }
 
+        //WHEN ALIENS HIT THERE SIDE
         public void HitSide()
         {
             this.MoveY();
@@ -56,9 +65,11 @@ namespace Game1_SpaceInvaders
             this.MoveX();
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, Game1 mainGame)
         {
-            alienAnimation.Update(gameTime);       
+            alienAnimation.Update(gameTime, false);
+            if (health <= 0)
+                mainGame.currentAliens.Remove(this);
         }
 
         public void Draw(SpriteBatch spriteBatch)

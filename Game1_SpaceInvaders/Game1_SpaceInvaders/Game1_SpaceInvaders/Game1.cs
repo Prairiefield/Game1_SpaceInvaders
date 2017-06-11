@@ -16,11 +16,20 @@ namespace Game1_SpaceInvaders
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        float rawr = 5;
+
         PlayerClass player1;
-        Projectile_General genericProjectile = new Projectile_General(0,false,0,0);
+        public Projectile_General genericProjectile = new Projectile_General(0,false,0,0);
 
         public List<BasicAliens> currentAliens = new List<BasicAliens>();
         public Texture2D alienTexture;
+        public Texture2D alien1;
+        public Texture2D alien2;
+        public Texture2D alien3;
+
+        public Texture2D playerMoveAnimation;
+        public Texture2D playerFireAnimation;
+        public Texture2D bulletTexture;
 
         public List<Projectile_General> unCollided = new List<Projectile_General>();
         public List<Projectile_General> collided = new List<Projectile_General>();
@@ -56,6 +65,7 @@ namespace Game1_SpaceInvaders
             graphics.PreferredBackBufferHeight = 600;
             graphics.PreferredBackBufferWidth = 800;
             IsMouseVisible = true;
+            graphics.IsFullScreen = false;
         }
 
         protected override void Initialize()
@@ -73,17 +83,22 @@ namespace Game1_SpaceInvaders
             bufferHeight = graphics.PreferredBackBufferHeight;
             bufferWidth = graphics.PreferredBackBufferWidth;
 
-            player1 = new PlayerClass(this, 20, 40);
+            player1 = new PlayerClass(this, 64, 64);
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             alienTexture = Content.Load<Texture2D>("blackMana");
             blueColor = Content.Load<Texture2D>("blueMana");
-
+            alien1 = Content.Load<Texture2D>("Alien 1");
+            alien2 = Content.Load<Texture2D>("Alien 2");
+            alien3 = Content.Load<Texture2D>("Alien 3");
+            playerMoveAnimation = Content.Load<Texture2D>("TankLR");
+            playerFireAnimation = Content.Load<Texture2D>("TankFire");
+            bulletTexture = Content.Load<Texture2D>("Bullet");
 
             level.UpdateLevel(this);
             for (int i = 0; i < currentAliens.Count(); i++)
-                currentAliens[i].LoadContent(Content);
+                currentAliens[i].LoadContent();
         }
 
         protected override void UnloadContent()
@@ -94,9 +109,11 @@ namespace Game1_SpaceInvaders
         {
             newKeyboard = Keyboard.GetState();
 
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || newKeyboard.IsKeyDown(Keys.X))
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || newKeyboard.IsKeyDown(Keys.X) || newKeyboard.IsKeyDown(Keys.Escape))
                 this.Exit();
 
+            if (newKeyboard.IsKeyDown(Keys.D) && !oldKeyboard.IsKeyDown(Keys.D))
+                showDebug = !showDebug;
 
             //IN COMBAT
             #region
@@ -106,7 +123,7 @@ namespace Game1_SpaceInvaders
                 #region
                 for (int i = 0; i < unCollided.Count(); i++)
                     unCollided[i].Update(this);
-                player1.Update(this);
+                player1.Update(this, gameTime);
                 #endregion
 
                 //MOVE ALIENS
@@ -123,13 +140,7 @@ namespace Game1_SpaceInvaders
 
                 //UPDATE ALIEN TEXTURES
                 for (int i = 0; i < currentAliens.Count(); i++)
-                    currentAliens[i].Update(gameTime);
-                #endregion
-
-                //FIRE PROJECTILE
-                #region
-                if (newKeyboard.IsKeyDown(Keys.Space) && !oldKeyboard.IsKeyDown(Keys.Space))
-                    unCollided.Add(new Projectile_General(-10, false, player1.CenterX() - (genericProjectile.projectileHitBox.Width / 2), player1.playerRect.Y));
+                    currentAliens[i].Update(gameTime, this);
                 #endregion
 
                 //ALIEN HIT DETECTION
@@ -139,9 +150,9 @@ namespace Game1_SpaceInvaders
                         if (unCollided[i].projectileHitBox.Intersects(currentAliens[j].alienRect))
                         {
                             unCollided.RemoveAt(i);
-                            currentAliens.RemoveAt(j);
+                            currentAliens[j].health--;
                             for (int k = 0; k < currentAliens.Count(); k++)
-                                currentAliens[k].moveSpeed = currentAliens[k].moveSpeed + 0.5f;
+                                currentAliens[k].moveSpeed = currentAliens[k].moveSpeed + 0.2f;
                             break;
                         }
                 #endregion
@@ -187,6 +198,7 @@ namespace Game1_SpaceInvaders
                 if (newKeyboard.IsKeyDown(Keys.C))
                 {
                     gameState = GameState.Combat;
+                    rawr = 5;
                     level.NextLevel(this);
                 }
             }
@@ -218,10 +230,11 @@ namespace Game1_SpaceInvaders
             #region
             if (gameState == GameState.Combat || gameState == GameState.Paused)
             {
-                for (int i = 0; i < unCollided.Count(); i++)
-                    spriteBatch.Draw(alienTexture, unCollided[i].projectileHitBox, Color.White);
 
-                spriteBatch.Draw(alienTexture, player1.playerRect, Color.White);
+                for (int i = 0; i < unCollided.Count(); i++)
+                    unCollided[i].Draw(spriteBatch, this);
+
+                player1.Draw(this, spriteBatch);
 
                 for (int i = 0; i < currentAliens.Count(); i++)
                     currentAliens[i].Draw(spriteBatch);
@@ -241,8 +254,16 @@ namespace Game1_SpaceInvaders
             #region
             if (gameState == GameState.Victory)
             {
+                rawr -= (float)gameTime.ElapsedGameTime.TotalSeconds;
                 spriteBatch.DrawString(endText, "Victory", new Vector2(0, 0), Color.Black);
                 spriteBatch.DrawString(endText, "Press C to continue", new Vector2(0, 35), Color.Black);
+                spriteBatch.DrawString(endText, Math.Round(rawr).ToString(), new Vector2(bufferWidth / 2, bufferHeight / 2), Color.Black);
+                if (rawr <= 0)
+                {
+                    rawr = 5;
+                    gameState = GameState.Combat;
+                    level.NextLevel(this);
+                }
             }
             #endregion
 
@@ -259,7 +280,8 @@ namespace Game1_SpaceInvaders
             #region
             if (showDebug)
             {
-
+                spriteBatch.DrawString(basicText, player1.playerFire.frames.ToString(), new Vector2(0, 0), Color.Black);
+                spriteBatch.DrawString(basicText, player1.playerFire.numbrFrames.ToString(), new Vector2(0, 35), Color.Black);
             }
             #endregion
 

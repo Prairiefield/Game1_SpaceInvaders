@@ -51,7 +51,7 @@ namespace Game1_SpaceInvaders
             UpdateLevel(mainGame);
 
             for (int i = 0; i < mainGame.currentAliens.Count(); i++)
-                mainGame.currentAliens[i].LoadContent(mainGame.Content);
+                mainGame.currentAliens[i].LoadContent();
         }
 
         public void AliensSetUp(int numberRows, int numberColumns, int spaceBetween, int XStart, int YStart, int AlienType, Game1 mainGame)

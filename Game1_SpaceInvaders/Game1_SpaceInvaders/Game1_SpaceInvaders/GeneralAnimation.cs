@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Game1_SpaceInvaders
 {
-    class GeneralAnimation
+    public class GeneralAnimation
     {
         public Rectangle sourceRect;
         public Rectangle animationRect;
@@ -28,25 +28,41 @@ namespace Game1_SpaceInvaders
             sourceRect = SourceRect;
         }
 
-        public void LoadContent(ContentManager Content)
+        public void LoadContent()
         {
             numbrFrames = animationRect.Width / sourceRect.Width;
-
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, bool Reverse)
         {
             elapsed += (float)gameTime.ElapsedGameTime.Milliseconds;
-            if (elapsed >= delay)
+
+            if (!Reverse)
             {
-                if (frames >= numbrFrames)
-                    frames = 0;
-                else
-                    frames++;
-                elapsed = 0;
+                if (elapsed >= delay)
+                {
+                    if (frames >= numbrFrames - 1)
+                        frames = 0;
+                    else
+                        frames++;
+                    elapsed = 0;
+                }
             }
 
-            sourceRect = new Rectangle((animationRect.Width / numbrFrames) * frames, 0, (animationRect.Width / numbrFrames), animationRect.Height);
+            else
+            {
+                if (elapsed >= delay)
+                {
+                    if (frames <= 0)
+                        frames = numbrFrames - 1;
+                    else
+                        frames--;
+                    elapsed = 0;
+                }
+            }
+
+            sourceRect = new Rectangle(sourceRect.Width * frames, 0, sourceRect.Width, animationRect.Height);
+
         }
     }
 }

@@ -26,3 +26,10 @@ K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Con
 K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\EndText.xnb
 E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\blueMana.xnb
 E:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\EndText.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\Alien 1.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\Alien 2.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\Alien 3.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\TankFire.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\TankLR.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\TankStatic.xnb
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Debug\Content\Bullet.xnb

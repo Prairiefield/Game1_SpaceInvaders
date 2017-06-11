@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\blackMana.xnb</Output>
+      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\blackMana.xnb</Output>
       <Time>2017-06-05T09:55:28-04:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\blueMana.xnb</Output>
+      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\blueMana.xnb</Output>
       <Time>2017-06-07T17:54:22-04:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\BasicText.xnb</Output>
+      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\BasicText.xnb</Output>
       <Time>2017-06-05T10:22:52-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\EndText.xnb</Output>
+      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\EndText.xnb</Output>
       <Time>2017-06-07T19:04:44-04:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\Alien 1.xnb</Output>
+      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\Alien 1.xnb</Output>
       <Time>2017-06-10T20:47:32-04:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\Alien 2.xnb</Output>
+      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\Alien 2.xnb</Output>
       <Time>2017-06-10T20:47:42-04:00</Time>
     </Item>
     <Item>
@@ -61,19 +61,19 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\Alien 3.xnb</Output>
+      <Output>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\Alien 3.xnb</Output>
       <Time>2017-06-10T20:47:54-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
-      <BuildConfiguration>Build 0.02</BuildConfiguration>
+      <BuildConfiguration>Build 0.03</BuildConfiguration>
       <CompressContent>false</CompressContent>
       <RootDirectory>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvadersContent\</RootDirectory>
       <LoggerRootDirectory>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\</LoggerRootDirectory>
-      <IntermediateDirectory>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvadersContent\obj\x86\Build 0.02\</IntermediateDirectory>
-      <OutputDirectory>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.02\Content\</OutputDirectory>
+      <IntermediateDirectory>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvadersContent\obj\x86\Build 0.03\</IntermediateDirectory>
+      <OutputDirectory>K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\bin\x86\Build 0.03\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

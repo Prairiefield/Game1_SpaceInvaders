@@ -7,22 +7,42 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game1_SpaceInvadersContent"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		0.04|x86 = 0.04|x86
 		Build 0.01|x86 = Build 0.01|x86
 		Build 0.02|x86 = Build 0.02|x86
+		Build 0.03|x86 = Build 0.03|x86
+		Build 0.05|x86 = Build 0.05|x86
+		Build 0.06|x86 = Build 0.06|x86
+		Build 0.07|x86 = Build 0.07|x86
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.0.04|x86.ActiveCfg = 0.04|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.0.04|x86.Build.0 = 0.04|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.01|x86.ActiveCfg = Build 0.01|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.01|x86.Build.0 = Build 0.01|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.02|x86.ActiveCfg = Build 0.02|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.02|x86.Build.0 = Build 0.02|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.03|x86.ActiveCfg = Build 0.03|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.03|x86.Build.0 = Build 0.03|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.05|x86.ActiveCfg = Build 0.05|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.05|x86.Build.0 = Build 0.05|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.06|x86.ActiveCfg = Build 0.06|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.06|x86.Build.0 = Build 0.06|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.07|x86.ActiveCfg = Build 0.07|x86
+		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Build 0.07|x86.Build.0 = Build 0.07|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Debug|x86.ActiveCfg = Debug|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Debug|x86.Build.0 = Debug|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Release|x86.ActiveCfg = Release|x86
 		{68D3662C-4C06-4DE3-ADA2-C38EB105AE24}.Release|x86.Build.0 = Release|x86
+		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.0.04|x86.ActiveCfg = Release|x86
 		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Build 0.01|x86.ActiveCfg = Release|x86
 		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Build 0.02|x86.ActiveCfg = Release|x86
+		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Build 0.03|x86.ActiveCfg = Release|x86
+		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Build 0.05|x86.ActiveCfg = Release|x86
+		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Build 0.06|x86.ActiveCfg = Release|x86
+		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Build 0.07|x86.ActiveCfg = Release|x86
 		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Debug|x86.ActiveCfg = Debug|x86
 		{9C2DFD36-7042-4571-AE27-85580A82CEA7}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection

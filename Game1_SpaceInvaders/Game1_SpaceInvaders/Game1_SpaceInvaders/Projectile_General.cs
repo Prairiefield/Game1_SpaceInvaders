@@ -23,7 +23,7 @@ namespace Game1_SpaceInvaders
         public Projectile_General(int Speed, bool Explosive, int XStart, int YStart)
         {
             projectileSpeed = Speed;
-            projectileHitBox = new Rectangle(XStart, YStart, 3, 8);
+            projectileHitBox = new Rectangle(XStart, YStart, 8, 10);
             explosive = Explosive;
             projectileExplosion = new Rectangle(0, 0, 20, 20);
             collided = false;
@@ -40,9 +40,9 @@ namespace Game1_SpaceInvaders
         public void Draw(SpriteBatch spriteBatch, Game1 mainGame)
         {
             if (!collided)
-                spriteBatch.Draw(mainGame.alienTexture, projectileHitBox, Color.White);
+                spriteBatch.Draw(mainGame.bulletTexture, projectileHitBox, Color.White);
             else
-                spriteBatch.Draw(mainGame.alienTexture, projectileExplosion, Color.White);
+                spriteBatch.Draw(mainGame.bulletTexture, projectileExplosion, Color.White);
 
         }
     }

@@ -1,0 +1,2 @@
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Build 0.03\Game1_SpaceInvaders.csprojResolveAssemblyReference.cache
+K:\Game1_SpaceInvaders\Game1_SpaceInvaders\Game1_SpaceInvaders\obj\x86\Build 0.03\Microsoft.Xna.Framework.RuntimeProfile.txt

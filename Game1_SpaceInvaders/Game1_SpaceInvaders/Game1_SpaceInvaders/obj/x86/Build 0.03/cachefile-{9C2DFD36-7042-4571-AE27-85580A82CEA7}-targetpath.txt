@@ -1,0 +1,4 @@
+Content\blackMana.xnb
+Content\blueMana.xnb
+Content\BasicText.xnb
+Content\EndText.xnb

@@ -123,7 +123,7 @@ namespace Game1_SpaceInvaders
 
                 //UPDATE ALIEN TEXTURES
                 for (int i = 0; i < currentAliens.Count(); i++)
-                    currentAliens[i].Update(gameTime);
+                    currentAliens[i].Update(gameTime, this);
                 #endregion
 
                 //FIRE PROJECTILE
@@ -139,7 +139,7 @@ namespace Game1_SpaceInvaders
                         if (unCollided[i].projectileHitBox.Intersects(currentAliens[j].alienRect))
                         {
                             unCollided.RemoveAt(i);
-                            currentAliens.RemoveAt(j);
+                            currentAliens[j].health--;
                             for (int k = 0; k < currentAliens.Count(); k++)
                                 currentAliens[k].moveSpeed = currentAliens[k].moveSpeed + 0.5f;
                             break;
